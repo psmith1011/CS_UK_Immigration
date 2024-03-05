@@ -8,8 +8,16 @@ Contact: patrick.b.smith@gmail.com
 **Project Overview**
 -----------------------
 **Problem Area**
+o	Area of Interest: Immigration and asylum seekers in western europe or north america, over a 10+ year period
+o	Is there a way to use historical data to predict the possibility of someone applying for citizenship/refugee/asylum status?
+o	Challenges: Understanding trends, patterns, and factors influencing immigration and asylum-seeking behaviors over time. Addressing issues related to integration, policy effectiveness, and societal impact.
 
 **Those Affected**
+o	Individuals who want to immigrate to select countries. Maybe they have a few to choose from and it is difficult to figure out which would have the best odds. With the model’s help that can know whether it is worth the effort. This could also include organizations, policymakers, and researchers interested in understanding immigration dynamics, policy evaluation, and societal integration
+o	Benefits: Could provide assistance to people that are unsure on making one of their most important life decisions, by taking everything and moving to another country. Also improved decision-making and better policy formulation, 
+o	Societal value: Enhanced understanding of immigration dynamics can lead to more informed policy decisions, improved integration efforts, and better societal outcomes.
+o	Quantification: Potential impacts can include economic benefits from optimized immigration policies and improved cultural diversity.
+
 
 **Flowchart**
 
@@ -53,4 +61,5 @@ Part 3:
 Part 4:
 
 **Acknowledgements and Sources**
-https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables
+o	UK Home Office Immigration Statistics: Provides detailed statistics on various aspects of immigration, including nationality, visa type, asylum applications, and outcomes.
+  o	https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables
