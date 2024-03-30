@@ -51,7 +51,9 @@ Here is a press release from the UK Home Office, aka Home Department, (departmen
     The pandemic significantly impacted the government’s ability to remove people with no right to be in the UK.
 
     As we work to reform the broken and outdated system, we must ensure we have sufficient capacity to meet our statutory duty to provide accommodation to those in need of our support.
+
     It is only controlled immigration through safe and legal routes that allows us to make generous offers of sanctuary, while managing pressures on public services, with the proper support people need to rebuild their lives, integrate and thrive.
+
     The New Plan for Immigration will reform the asylum system, enabling the government to support those in genuine need while preventing abuse of the system and deterring illegal entry to the UK.
 
 -----------------------
@@ -59,16 +61,24 @@ Here is a press release from the UK Home Office, aka Home Department, (departmen
 -----------------------
 
 **Problem Area**  
+
 - Area of Interest: Immigration and asylum seekers in western europe or north america, over a 10+ year period  
+
 - Is there a way to use historical data to predict the possibility of someone applying for citizenship/refugee/asylum status?  
 
-**Those Affected**  
-- Individuals who want to immigrate to select countries. Maybe they have a few to choose from and it is difficult to figure out which would have the best odds. With the model’s help that can know whether it is worth the effort. This could also include organizations, policymakers, and researchers interested in understanding immigration dynamics, policy evaluation, and societal integration  
+**Those Affected** 
+
+- Individuals who want to immigrate to select countries. Maybe they have a few to choose from and it is difficult to figure out which would have the best odds
+
+- With the model’s help that can know whether it is worth the effort. This could also include organizations, policymakers, and researchers interested in understanding immigration dynamics, policy evaluation, and societal integration  
 
 **Potential Impact**
+
 - Could provide a useful free to for assistance to people that are unsure on making one of their most important life decisions, by taking everything and moving to another country. 
-- Improved decision-making and better policy formulation, including transparency, for evidence-based immigration policies or disclosure. 
-- Societal value: Enhanced understanding of immigration dynamics can lead to more informed policy decisions, improved integration efforts, and better societal outcomes.  
+
+- Improved decision-making and better policy formulation, including transparency, for evidence-based immigration policies or disclosure 
+
+- Societal value: Enhanced understanding of immigration dynamics can lead to more informed policy decisions, improved integration efforts, and better societal outcomes
 
 ------
 
