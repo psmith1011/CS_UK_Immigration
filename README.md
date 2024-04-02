@@ -22,10 +22,10 @@ Contact: patrick.b.smith@gmail.com
 
 |                | 1971  | 1981  | 1991  | 2001  | 2011  | 2021  |
 |----------------|-------|-------|-------|-------|-------|-------|
-| All People     | 52.6M | 53.6M | 54.9M | 57.1M | 63.3M | -M |
-| Born Abroad    | 3.2M  | 3.4M  | 3.8M  | 4.9M  | 8.0M  | -M |
-| % T            | 4.6%  |  6.2%  | 6.7%  | 8.3% | 12.7%  | % |
-| % Δ Decade     | 24.0%  | 7.5%  | 11.8%  | 27.7% | 63.0% | - |
+| All People     | 52.6M | 53.6M | 54.9M | 57.1M | 63.3M | 67.0M |
+| Born Abroad    | 3.2M  | 3.4M  | 3.8M  | 4.9M  | 8.0M  | 9.5M |
+| % T            | 5.1%  |  6.3%  | 6.9%  | 8.6% | 12.6%  | 14.1% |
+| % Δ Decade     | 24.0%  | 7.5%  | 11.8%  | 27.7% | 63.0% | 18.6% |
 
 ### Forward
 
@@ -224,8 +224,11 @@ Folders: Charts and Maps, Notebook_Code_files, and Presentation
 Execution Order
 
 Part 1: Book 1: Initial analysis and EDA
+
 Part 2: Book 2: Further EDA and preprocessing
+
 Part 3: Book 3: Preprocessing and Baseline Modelling
+
 Part 4: TBD
 
 ------
