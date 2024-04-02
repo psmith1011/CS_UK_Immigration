@@ -3,7 +3,7 @@
 ## A Deep Analysis of Asylum Seekers for the years of 2001 to 2023*
 
 Author: Patrick Smith  
-Date: 27/03/24  
+Date: 02/04/24  
 Contact: patrick.b.smith@gmail.com
 
 -----------------------
@@ -129,7 +129,6 @@ We have combined 6 excel sheets from the UK gov' for more than 1M rows. We began
 ## Proposed Data Science Solution
 
 
-
 - The analysis is to predict trends in UK immigration using data science methods. Here are the most important components of the project:
 
 - Data exploration: Cleaning and finding the most important variables.
@@ -190,7 +189,6 @@ The dataset consists of the following fields:
 | Sex_Other                      | Dummy variable for other or NA (1 if other/unknown, 0 otherwise).          | object   |
 | Local authority                | The local authority in which a citizenship ceremony took place.            | object   |
 | UK Region                      | The UK region in which the citizenship ceremony took place.                | object   |
-| Ceremonies attended            | The number of citizenship ceremonies attended in each local authority.     | float64  |
 
 ------
 ## Flowchart
@@ -208,7 +206,8 @@ The dataset consists of the following fields:
         Figure out initial questions prior to modelling
 
     Baseline Modeling:
-        tbd 
+        Logistic regression model
+        Confusion matrix
 
     Advanced Modeling (Sprint 3):
         x
@@ -218,16 +217,16 @@ The dataset consists of the following fields:
 
 **Repository Navigation Instructions**
 
-Folders
+Folders: Charts and Maps, Notebook_Code_files, and Presentation
 
 
 **Notebook Usage Instructions**
 Execution Order
 
-Part 1:
-Part 2:
-Part 3:
-Part 4:
+Part 1: Book 1: Initial analysis and EDA
+Part 2: Book 2: Further EDA and preprocessing
+Part 3: Book 3: Preprocessing and Baseline Modelling
+Part 4: TBD
 
 ------
 ## Acknowledgements and Sources
