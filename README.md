@@ -222,15 +222,19 @@ Our ultimate goal is to develop predictive models that can forecast future immig
 
 ## Description of Values within our Target Column, 'Case Outcome'
 
-- **Issued:** Represents cases where visas or permissions were granted. Consider this as a general positive decision that wasn't specified.
+ **Issued:** This category includes cases where visas, permits, or permissions were granted without further categorization. It is considered a positive outcome, indicating approval of the application.
 
-- **Refused:** Encompasses all cases where applications were denied, including certified refusals and other specified forms of refusal.
+- **Sponsored Work Visa:** Where individuals were granted visas under employment-based sponsorship programs. This type of visa often involves an employer in the destination country supporting the visa application.
 
-**Withdrawn:** Includes applications that were either withdrawn by the applicant or lapsed due to other reasons.
+- **Refused:** Represents all instances where applications were explicitly denied. 
 
-**Resettlements:** Relates to cases involving resettlement programs, which are typically humanitarian efforts that relocate vulnerable individuals from regions of danger to safe countries. 
+- **Withdrawn:** Applications that were withdrawn voluntarily by the applicant or became void due to non-compliance with application requirements or missed deadlines.
 
-**Notebook Usage Instructions**
+- **Asylum Case:** For individuals who applied for asylum status, reflecting the process and outcomes specific to those seeking refuge from persecution based on race, religion, nationality, and/or political opinion.
+
+- **Resettlement Case:** Relates to cases involving organized resettlement programs, which are typically humanitarian efforts that relocate vulnerable individuals from regions of danger to safe countries.
+
+## Notebook Usage Instructions
 
 **Execution Order**
 
@@ -313,14 +317,15 @@ This project aims to use data science techniques to predict trends in UK immigra
 Folders: 
 - 1: Notebook_Code_files 
 - 2: Presentation
+- 3: Classification csv Data
 
 ------
 ## Acknowledgements and Sources
 
-Dataset link:  
+Dataset link: https://drive.google.com/drive/folders/1o4Elwq6g1cQ-xhM2lFERG-V_EI6qpHzR?usp=drive_link
 
 o	UK Home Office Immigration Statistics: Provides detailed statistics on various aspects of immigration, including nationality, visa type, asylum applications, and outcomes.  
-  o	https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables
+  https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables
   https://www.gov.uk/government/collections/immigration-statistics-quarterly-release
   https://www.gov.uk/government/statistical-data-sets/irregular-migration-detailed-dataset-and-summary-tables#detailed-datasets
   
