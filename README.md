@@ -1,9 +1,9 @@
 # UK Immigration 
 
-## A Deep Analysis of Asylum Seekers for the years of 2001 to 2023*
+## A Deep Analysis of Asylum Seekers for the years of 2001-2023
 
 Author: Patrick Smith  
-Date: 02/04/24  
+Date: 16/04/24  
 Contact: patrick.b.smith@gmail.com
 
 -----------------------
@@ -18,6 +18,37 @@ Contact: patrick.b.smith@gmail.com
 
 -----------------------
 
+## Exploring Global and Cultural Origins
+
+## Questions to Get You Thinking:
+
+### #1: What percentage of the global population lives outside their country of birth? How does the UK compare?
+
+### #2: Where do fish and chips come from?
+
+### #3: The British are known for their tea. Where did tea originate from?
+
+
+## Answers:
+
+### #1: 3.6%
+
+Usually people guess much higher. The fact is that there are many closed off countries than the average person expects, especially those from North America or Western Europe. 
+
+The UK, with its rich history of immigration, stands as a prime example of a diverse and multicultural society shaped significantly by its immigrant population.
+
+### #2: Jewish Refugees from Portugal
+
+2: The Origins of Fish and Chips
+
+ Fish and chips, a quintessential British dish, surprisingly has its roots elsewhere. Introduced by Jewish refugees from Portugal in the 16th century, this dish became a national staple in the UK. The refugees brought the tradition of frying fish, which later merged with chips (fries), a popular food among the working class in the UK. The fusion has become a beloved symbol of British food culture.
+
+### #3: East Asia (mostly China)
+
+3: The British Tea Tradition
+
+Although tea is synonymous with British culture, it originally comes from East Asia, primarily China. It was introduced to Britain in the 17th century by the East India Company and has since become a deeply ingrained part of British culture, influencing social habits and becoming a national symbol.
+
 ### Population of the United Kingdom 1971-2021
 
 |                | 1971  | 1981  | 1991  | 2001  | 2011  | 2021  |
@@ -27,7 +58,13 @@ Contact: patrick.b.smith@gmail.com
 | % T            | 5.1%  |  6.3%  | 6.9%  | 8.6% | 12.6%  | 14.1% |
 | % Δ Decade     | 24.0%  | 7.5%  | 11.8%  | 27.7% | 63.0% | 18.6% |
 
-### Forward
+The population of the UK has risen to 9.5M, as of 2021, which amounts to ~14% of the total population. 
+
+Given the limited land space in the UK, the ongoing increase in population density might raise challenges related to infrastructure, housing, and public services. The UK has a limited amount of space available at ~250,000 square km. To put it in perspective, Canada, one of the largest countries in the world by landmass, is ~10 million square km.
+
+The steady rise in the population born abroad in the UK suggests that immigration will continue to play a crucial role in the country's demographic dynamics. These factors necessitate continued attention and effective policy-making to manage the implications of a growing and increasingly diverse population.
+
+### UK Immigration Costs are Rising
 
 Like many G7 nations like Canada, the cost of immigration, both illegal, and legal, is rising. The United Kingdom, the focus of this study, is having a historic rise in the cost of its asylum system, mainly due to "under enormous and unsustainable pressure due to the challenges of the pandemic and significant increase in small boat crossings."
 
@@ -56,180 +93,226 @@ Here is a press release from the UK Home Office, aka Home Department, (departmen
 
     The New Plan for Immigration will reform the asylum system, enabling the government to support those in genuine need while preventing abuse of the system and deterring illegal entry to the UK.
 
------------------------
-## Project Overview
------------------------
+----
 
-**Problem Area**  
+# Project Overview
 
-- Area of Interest: Immigration and asylum seekers in western europe or north america, over a 10+ year period  
+### Problem Area
 
-- Is there a way to use historical data to predict the possibility of someone applying for citizenship/refugee/asylum status?  
+**Area of Interest:**
+- Focus on immigration and asylum seekers in Western Europe or North America over a period exceeding ten years
 
-**Those Affected** 
+- Exploration of the feasibility of using historical data to predict potential applications for citizenship, refugee, or asylum status
 
-- Individuals who want to immigrate to select countries. Maybe they have a few to choose from and it is difficult to figure out which would have the best odds
+### Those Affected
 
-- With the model’s help that can know whether it is worth the effort. This could also include organizations, policymakers, and researchers interested in understanding immigration dynamics, policy evaluation, and societal integration  
+**Target Groups:**
+- Individuals contemplating immigration among multiple country options, assisting in decision-making about where they might have the best opportunities
 
-**Potential Impact**
+- Organizations, policymakers, and researchers interested in immigration trends, policy impacts, and integration processes
 
-- Could provide a useful free to for assistance to people that are unsure on making one of their most important life decisions, by taking everything and moving to another country. 
+## Potential Impact
 
-- Improved decision-making and better policy formulation, including transparency, for evidence-based immigration policies or disclosure 
+**Benefits of the Model:**
+- Provides a decision-support tool for potential immigrants evaluating their options, offering insights into the likelihood of successful immigration processes
 
-- Societal value: Enhanced understanding of immigration dynamics can lead to more informed policy decisions, improved integration efforts, and better societal outcomes
+- Enhances policymaking with data-driven insights, allowing for the formulation of more effective and transparent immigration policies
 
-------
-
-              |    |    |                 
-             )_)  )_)  )_)              
-            )___))___))___)\            
-           )____)____)_____)\\
-         _____|____|____|____\\\__
-
------
+- Contributes societal value by deepening the understanding of immigration dynamics, which can improve integration strategies and overall policy decisions impacting immigrants
 
 ## Summary
 
-We have combined 6 excel sheets from the UK gov' for more than 1M rows. We began with ~350K with one spreadsheet.
+- We have combined data from 15 Excel files sourced from the UK government, encompassing over 1.5 million rows and 47 columns featuring strings, floats, and integers. 
 
-**Flowchart**
+- This comprehensive dataset covers various aspects of immigration and citizenship, providing insights into trends and patterns.
 
-1. Data Collection
-  - Obtained 15 seperate xls files from an offical UK government website(1)
-  - These original filenames are:
-    - 1) asylum-appeals-lodged-datasets-mar-2023(1)**  
-    - 2) asylum-applications-awaiting-decision-datasets-sep-2023  
-    - 3) asylum-applications-datasets-sep-2023(1)  
-    - 4) asylum-seekers-receipt-support-datasets-sep-2023  
-    - 5) citizenship-datasets-sep-2023  
-    - 6) detention-datasets-sep-2023  
-    - 7) entry-clearance-visa-outcomes-datasets-sep-2023  
-    - 8) extensions-datasets-sep-2023  
-    - 9) migration-study-sponsorship-datasets-sep-2023  
-    - 10) migration-work-sponsorship-datasets-sep-2023  
-    - 11) occupation-visas-datasets-sep-2023  
-    - 12) outcome-analysis-asylum-applications-datasets-jun-2022  
-    - 13) returns-datasets-sep-2023  
-    - 14) settlement-datasets-sep-2023  
-        
-  - Some of the files have similar columns. Others have different date ranges. For example, some go back to 2001, moving to 2023. Others are 2010-2023, 2014-2023, or shortest at 2021-2023. These have been filtered to 'Annual' and 'Quarterly' directories (Q1, Q2, Q3, and Q4), and filtered again in those yearly ranges noted above.  
-  
-  - Most relevant 7 xls files were linked together. These are mapped out below:  
-    - #1 returns-clean(13) <-> #2 entries-clean(7) <-> #3 asylum(12) <-> #4 grants(5) <-> #5 asylum_applications(3) <-> #6 applications_jobs(11) <-> #7 grants_jobs(12)
-    
-    - From oldest read data to new 1-2-3-4-5-6, data is pasted on top, so it is 6-5-4-3-2-1 unfiltered.
+### Data Collection
 
-  - The remaining were not used but saved for possible addition later
-  - Note that the UK Gov regularly puts out new data, so it should be easy to rewrite the raw excel files and rerun the data to use new datapoints for later in 2023 and 2024
+Data was collected from an official UK government website. The detailed records span several departments, with the filenames listed below:
 
-  ------
+- `1_returns-datasets-dec-2023.xlsx`
+- `2_entry-clearance-visa-outcomes-datasets-dec-2023.xlsx`
+- `3_entry-clearance-visa-outcomes-datasets-dec-2023_outcomes.xlsx`
+- `4_asylum-applications-datasets-dec-2023.xlsx`
+- `5_citizenship-datasets-dec-2023.xlsx`
+- `6_citizenship-datasets-dec-2023_2.xlsx`
+- `7_app_occupation-visas-datasets-dec-2023.xlsx`
+- `8_grants_occupation-visas-datasets-dec-2023_2.xlsx`
+- `9_app_extensions-datasets-dec-2023.xlsx`
+- `10_grant_extensions-datasets-dec-2023.xlsx`
+- `11_asylum-appeals-lodged-datasets-mar-2023.xlsx`
+- `12_asylum-applications-awaiting-decision-datasets-dec-2023.xlsx`
+- `13_migration-work-sponsorship-datasets-dec-2023.xlsx`
+- `14_nation_migration-work-sponsorship-datasets-dec-2023.xlsx`
+- `15_passengers-refused-entry-border-datasets-dec-2023.xlsx`
 
-## Proposed Data Science Solution
+These datasets cover various timeframes and categories, with some files sharing similar columns while others span different date ranges, from 2001 to 2023. 
+
+## Integration Strategy
+
+- Data integration was planned to maintain chronological and thematic logic
+
+- New data is updated frequently and can be added by downloading the updated data sheet and replacing the existing one in the folder 
+- This structure supports easy updates and reprocessing to include new data points for future years.
+
+---
+
+## Data Exploration
+
+- **Cleaning Data:** We've focused on cleaning and preparing the data to ensure accuracy in our analysis.
+
+- **Identifying Key Variables:** Determining which variables are most predictive of immigration trends.
+
+## Summary Descriptive Analysis
+
+- **Case Outcomes:** Conduct basic statistical analyses to identify patterns and outliers in immigration case outcomes.
+
+- **Geographical Trends:** Explore the impact of countries on immigration, although this is of secondary importance compared to other factors.
+
+## Predictive Modeling
+
+- **Seasonal and Long-Term Trends:** Investigate if there are any cyclical patterns or long-term shifts in immigration patterns.
+
+- **Impact Analysis:** Examine how visa types, application types, socio-economic, and demographic factors influence UK immigration.
+
+Our ultimate goal is to develop predictive models that can forecast future immigration trends based on historical data.
+
+## Modeling and Evaluation
+
+### Model Selection and Optimization
+- **Model Variety:** We have utilized a range of models, including:
+
+  - Logistic Regression
+  - Decision Trees
+  - Support Vector Machines (SVMs)
+
+- **Optimization:** Each model has been tuned using techniques such as RandomizedSearchCV to enhance performance based on metrics like accuracy and F1-score.
 
 
-- The analysis is to predict trends in UK immigration using data science methods. Here are the most important components of the project:
+## Modeling and Evaluation
 
-- Data exploration: Cleaning and finding the most important variables.
+- **Model Variety**: We have deployed various models, including logistic regression, decision trees, and SVMs. Each model has been finely tuned using techniques like RandomizedSearchCV to optimize their performance based on metrics such as accuracy and F1-score.
 
-Descriptive Analysis: Conducting basic statistical analysis to look at trends related to case outcome. Secondary importance on countries as well.
-
-Are there any seasonal patterns or long-term trends?
-
-Does visa type, application type, or socio-economic, or demographic factors have a meaningful impact on immigration to the UK?
-
-Eventually, we want to build a predictive model to forecast future immigration patterns. This would be based on historical data.
-
-## Dataset Description
-
-The dataset consists of the following fields:
+- **Preventing Data Leakage**: Rigorous measures, including careful data splitting and preprocessing, ensure that our models are trained and validated correctly without leakage from the test set.
 
 
-| Column                         | Descriptor                                                                 | Datatype |
-|--------------------------------|----------------------------------------------------------------------------|----------|
-| Year                           | The period in which the event occurred.                                    | int32    |
-| Quarter                        | Quarter of the year (Q1=1, Q2=2, Q3=3, Q4=4).                              | object   |
-| Nationality                    | Nationality of the individual.                                             | object   |
-| Region                         | World region of the country of nationality for the individual.              | object   |
-| Return type group              | Grouped type of return (enforced, voluntary, refused entry at port).         | object   |
-| Return type                    | Specific type of return (enforced, voluntary, refused entry).               | object   |
-| Age                            | Age of the individual at the time of the event.                             | object   |
-| Sex                            | Gender of the individual (male, female, other/unknown).                     | int32    |
-| Return destination group       | Grouped destination country for return (Home country, EU, Other country).   | object   |
-| Return destination             | Specific destination country for return.                                    | object   |
-| Number of returns              | Count of returns.                                                           | float64  |
-| Visa type group                | Grouped type of sponsored work visa applied for.                            | object   |
-| Visa type subgroup             | Detailed type of sponsored work visa applied for.                           | object   |
-| Applicant type                 | Type of applicant (main applicant, dependant).                             | object   |
-| Case outcome                   | Outcome of the case (granted, refused, withdrawn, resettlement).             | object   |
-| Decisions                      | Number of decisions made.                                                   | float64  |
-| Case type                      | Type of case (asylum, resettlement).                                       | object   |
-| Case outcome group             | Grouped outcome of the case (granted protection, grant of other leave, refused, withdrawn). | object   |
-| UASC                           | Indicates if the applicant is an Unaccompanied Asylum-Seeking Child.       | object   |
-| Host Country                   | Country where the individual first sought asylum for resettlement cases.    | object   |
-| Location of application        | Location where the application was submitted.                               | object   |
-| Applications                   | Number of applications made.                                               | float64  |
-| Occupation                     | Occupation of the individual.                                              | object   |
-| Industry                       | Industry sector for which the application to work was made.                 | object   |
-| SOC code                       | Standard Occupational Classification code.                                 | object   |
-| Occ. major group               | Major group classification of the occupation.                              | object   |
-| Occ. sub-major group           | Sub-major group classification of the occupation.                          | object   |
-| Occ. minor group               | Minor group classification of the occupation.                              | object   |
-| Occ. unit group                | Unit group classification of the occupation.                               | object   |
-| Category of leave group        | Grouped category of extension applied for (work, study, family, other).     | object   |
-| Category of leave              | Category of extension applied for.                                         | object   |
-| Category of leave subgroup     | Detailed category of extension applied for.                                | object   |
-| Current category of leave group| Grouped current category of leave (work, study, family, other).            | object   |
-| Current category of leave      | Current category of leave.                                                 | object   |
-| Previous category of leave group | Grouped previous category of leave (work, study, family, other).         | object   |
-| Previous category of leave     | Previous category of leave.                                                | object   |
-| Sex_Male                       | Dummy variable for male (1 if male, 0 otherwise).                          | object   |
-| Sex_Female                     | Dummy variable for female (1 if female, 0 otherwise).                      | object   |
-| Sex_Other                      | Dummy variable for other or NA (1 if other/unknown, 0 otherwise).          | object   |
-| Local authority                | The local authority in which a citizenship ceremony took place.            | object   |
-| UK Region                      | The UK region in which the citizenship ceremony took place.                | object   |
 
+## Dataset Table of Contents
+
+
+| Column             | Descriptor                                                                                              | Datatype |
+|--------------------|---------------------------------------------------------------------------------------------------------|----------|
+| Year               | Year in which the event occurred, including initial decisions or resettlements.                         | int      |
+| Quarter            | Quarter of the year in which the event occurred (Q1, Q2, Q3, Q4).                                        | object   |
+| Nationality        | Nationality of the individual involved in the immigration process.                                      | object   |
+| Region             | World region of the individual's country of nationality.                                                | object   |
+| Age                | Age of the individual at the time of the event.                                                         | int      |
+| Sex                | Gender of the individual (Male, Female, Other).                                                         | object   |
+| Visa type group    | Grouped category of the visa applied for, describing the general purpose (e.g., work, study, family).   | object   |
+| Visa type          | Specific type of visa applied for within the grouped category.                                          | object   |
+| Visa type subgroup | Detailed classification of visa type, providing further specifics within the visa category.             | object   |
+| Applications       | Number of applications filed, shown as a percentage of missing data (21.04%).                           | int      |
+| Case outcome       | Outcome of the immigration case (granted, refused, withdrawn, etc.).                                    | object   |
+| Decisions          | Number of decisions made in cases, with a percentage of missing data (19.49%).                          | float64  |
+| Grants             | Number of grants issued, displayed with a percentage of missing data (18.45%).                          | float64  |
+| Occupation         | Occupation of the individual associated with the visa application.                                       | object   |
+| Industry           | Industry sector relevant to the visa application.                                                       | object   |
+| General_Region     | General geographical region in the UK associated with the immigration case.                             | object   |
 ------
-## Flowchart
 
-    Data Collection & Merge:
-        Find and download all spreadsheets of interest
-        Filter to choose which ones make most sense and have optimal infomation, but not too large a file
-        Perform minor cleaning
+## Description of Values within our Target Column, 'Case Outcome'
 
-    Exploratory Data Analysis:
-        Further cleaning
-        Analyze variables distribution
-        Visualize patterns via plotting
-        Establish best dependent variable
-        Figure out initial questions prior to modelling
+- **Issued:** Represents cases where visas or permissions were granted. Consider this as a general positive decision that wasn't specified.
 
-    Baseline Modeling:
-        Logistic regression model
-        Confusion matrix
+- **Refused:** Encompasses all cases where applications were denied, including certified refusals and other specified forms of refusal.
 
-    Advanced Modeling (Sprint 3):
-        x
-        y
-        z
+**Withdrawn:** Includes applications that were either withdrawn by the applicant or lapsed due to other reasons.
 
+**Resettlements:** Relates to cases involving resettlement programs, which are typically humanitarian efforts that relocate vulnerable individuals from regions of danger to safe countries. 
+
+**Notebook Usage Instructions**
+
+**Execution Order**
+
+- Book 1: Initial analysis and EDA
+- Book 2: Further EDA and preprocessing
+- Book 3: Preprocessing
+- Book 4: Advanced Modelling
+
+
+## Flowchart and Project Documentation
+
+This project aims to use data science techniques to predict trends in UK immigration. Our approach is structured into four main phases, each detailed below to outline the data flow and modeling process.
+
+### Data Collection & Merge (Book 1)
+
+---
+
+- **Data Acquisition:**
+  - Source relevant spreadsheets from official UK government databases.
+  - Dataset Selection: We chose datasets that provide optimal information and are manageable in size.
+  
+- **Initial Cleaning:**
+  - Conduct basic cleaning operations to prepare the data for merging and further analysis, such as fixing some spacing errors that result in errors when reading the xls files.
+
+### Exploratory Data Analysis (EDA) (Book 1 & 2) 
+----
+
+- **Further Cleaning:**
+  - Deep Cleaning: Perform in-depth cleaning to refine datasets, ensuring quality and consistency across variables. This includes doing many different kinds of imputations, including matching mismatched columns, filling NAs, and so on
+
+- **Variable Analysis:**
+  - Examine the distribution of various variables.
+  - Identify and visualize patterns through plots and charts.
+  - Analyze distributions and identify key variables.
+  
+- **Pre-Modeling Decisions:**
+  - Select the most appropriate dependent variable based on analysis.
+  - Develop initial hypotheses to guide the modeling phase based on insights from EDA.
+
+### Preprocessing (Book 3)
+
+----
+
+  - We focused on data imputation and transformation to limit the number of NAs or 0s in the data frame.
+  - Handle Missing Data: Apply appropriate techniques to deal with missing data, such as imputation.
+  - Feature Engineering: Create new features and transform existing variables to enhance model performance.
+
+### Baseline & Advanced Modelling (Book 4)
+
+---
+
+- **Initial Model Implementation:**
+  - Developed a logistic regression model to establish a baseline for performance.
+  - Encode Categorical Variables: Convert categorical variables using techniques like One-Hot Encoding.
+
+- **Model Evaluation:**
+  - Utilized a confusion matrix to assess the accuracy and effectiveness of the model.
+ 
+---
+
+### Advanced Modeling (Book 4)
+
+- **Enhanced Techniques:**
+
+    Evaluate models based on accuracy, F1-score, and other relevant metrics.
+  - Implemented advanced modeling techniques (specify models such as XGBoost, SVM, or Random Forests).
+
+- **Performance Optimization:**
+  - Apply techniques like GridSearchCV or RandomizedSearchCV to tune model parameters for optimal results.
+
+- **Iterative Testing:**
+  - Continuously test and refine models based on performance metrics and feedback from initial results.
+
+- **Model Comparison and Predictive Analysis**
+  - Compared the models in visuals to see which is has the best accuracy.
+  - Finally, we made some predictive analysis of all our work using this chosen model.
 
 **Repository Navigation Instructions**
 
-Folders: Charts and Maps, Notebook_Code_files, and Presentation
-
-
-**Notebook Usage Instructions**
-Execution Order
-
-Part 1: Book 1: Initial analysis and EDA
-
-Part 2: Book 2: Further EDA and preprocessing
-
-Part 3: Book 3: Preprocessing and Baseline Modelling
-
-Part 4: TBD
+Folders: 
+- 1: Notebook_Code_files 
+- 2: Presentation
 
 ------
 ## Acknowledgements and Sources
@@ -238,3 +321,11 @@ Dataset link:
 
 o	UK Home Office Immigration Statistics: Provides detailed statistics on various aspects of immigration, including nationality, visa type, asylum applications, and outcomes.  
   o	https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables
+  https://www.gov.uk/government/collections/immigration-statistics-quarterly-release
+  https://www.gov.uk/government/statistical-data-sets/irregular-migration-detailed-dataset-and-summary-tables#detailed-datasets
+  
+3 Cultural Question Sources
+
+1. https://www.pewresearch.org/short-reads/2022/12/16/key-facts-about-recent-trends-in-global-migration/
+2. https://www.rescue.org/uk/article/little-known-history-fish-and-chips
+3. https://www.tigerstealive.com/tiger-who-came-to-tea-blog/the-origin-of-tea-in-british-culture
