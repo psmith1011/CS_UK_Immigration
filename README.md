@@ -312,6 +312,11 @@ This project aims to use data science techniques to predict trends in UK immigra
   - Compared the models in visuals to see which is has the best accuracy.
   - Finally, we made some predictive analysis of all our work using this chosen model.
 
+
+### Streamlit App Instructions and Link
+
+
+
 **Repository Navigation Instructions**
 
 Folders: 
