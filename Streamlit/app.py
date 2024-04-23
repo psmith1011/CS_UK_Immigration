@@ -290,11 +290,11 @@ import joblib
 
 # Load the trained XGBoost model and the data with one-hot encoded columns
 model = joblib.load('xgb_model.pkl')
-df_reduced_nat_model = pd.read_csv('df_reduced_nat_model.csv')
+df_reduced_nat_model = pd.read_csv('df_reduced_nat.csv')
 
 def user_input_features():
     # Create a dictionary with all columns set to 0 (default)
-    data = {col: 0 for col in df_reduced_nat_model.columns}
+    data = {col: 0 for col in df_reduced_nat.columns}
 
     # Set up inputs for each feature according to your model's requirements
     # Assuming Age is a direct input and others are categorical (one-hot encoded)
@@ -308,12 +308,12 @@ def user_input_features():
 
     # Example of handling other categorical features
     # Here you need to list all nationalities and industries exactly as they were in training data
-    nationalities = [col for col in df_reduced_nat_model.columns if col.startswith('Nationality_')]
+    nationalities = [col for col in df_reduced_nat.columns if col.startswith('Nationality_')]
     chosen_nationality = st.selectbox('Nationality', [n.replace('Nationality_', '') for n in nationalities])
     data['Nationality_' + chosen_nationality] = 1
 
     # Handle industry similarly if it was part of your model
-    industries = [col for col in df_reduced_nat_model.columns if col.startswith('Industry_')]
+    industries = [col for col in df_reduced_nat.columns if col.startswith('Industry_')]
     chosen_industry = st.selectbox('Industry', [i.replace('Industry_', '') for i in industries])
     data['Industry_' + chosen_industry] = 1
 
