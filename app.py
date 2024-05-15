@@ -4,9 +4,11 @@ import geopandas as gpd
 from PIL import Image
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.express as px
 import numpy as np
-
+import joblib
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+import xgboost as xgb
 # Global variables
 
 # Function to load data
@@ -274,6 +276,7 @@ immigration_info = {
     }
 }
 
+
 def display_faq():
     st.sidebar.title("UK Immigration FAQs")
     selected_question = st.sidebar.selectbox("Choose a question", list(immigration_info.keys()))
@@ -288,59 +291,41 @@ def display_faq():
 
 # Prepare and train model
 def prepare_and_train_model(df):
-    # Assuming 'Case outcome' is a column in df with categories ['Refused', 'Study Visa Issued', 'Asylum Case']
-    # Encoding categorical data
     le = LabelEncoder()
     df['Nationality'] = le.fit_transform(df['Nationality'])
+    df['Sex'] = le.fit_transform(df['Sex'])
     df['Case outcome'] = le.fit_transform(df['Case outcome'])
-    
-    features = ['Nationality', 'Age', 'Sex']  # Example feature set
+    features = ['Nationality', 'Sex']  # Exclude 'Age'
     X = df[features]
     y = df['Case outcome']
-    
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    model = DecisionTreeClassifier(max_depth=5)
+    model = xgb.XGBClassifier(max_depth=5, use_label_encoder=False)
     model.fit(X_train, y_train)
-    joblib.dump(model, 'immigration_decision_tree.pkl')
+    joblib.dump(model, 'xgb_model.pkl')
     return model, le
 
-# Prediction function
-def predict_outcome(nationality, age, sex, encoder, model):
-    # Encoding input data
+
+
+def predict_outcome(nationality, sex, encoder, model):
     nationality_encoded = encoder.transform([nationality])[0]
     sex_encoded = encoder.transform([sex])[0]
-    input_data = np.array([nationality_encoded, age, sex_encoded]).reshape(1, -1)
+    input_data = np.array([nationality_encoded, sex_encoded]).reshape(1, -1)
     proba = model.predict_proba(input_data)
     return proba
 
-def main():
-    df = load_data()
-    model, encoder = prepare_and_train_model(df)
 
-    st.title("UK Immigration Decision Tree Model")
+def display_model_performance():
+    st.write("Model performance metrics will be displayed here.")
+    # Implement the actual model performance display logic
 
-    # User inputs
-    nationality = st.selectbox('Select your nationality', df['Nationality'].unique())
-    age = st.slider('Select your age', 18, 100, 30)
+def user_input_features():
+    nationality = st.selectbox('Select your nationality', df_nat['Nationality'].unique())
     sex = st.selectbox('Select your gender', ['Male', 'Female', 'Other'])
-
-    if st.button('Predict Outcome'):
-        prediction = predict_outcome(nationality, age, sex, encoder, model)
-        st.write(f"Probability of being Refused: {prediction[0][0]:.2f}")
-        st.write(f"Probability of Study Visa Issued: {prediction[0][1]:.2f}")
-        st.write(f"Probability of Asylum Case Success: {prediction[0][2]:.2f}")
-
-# Home page function
-def home_page():
-    st.title("Welcome to the UK Immigration Data Analysis App!")
-    df = load_data()
-    st.dataframe(df.head(10))  # Show a sample of the data
-    st.markdown("Explore the app to see visualizations and use the prediction model!")
-
+    return pd.DataFrame([[nationality, sex]], columns=['Nationality', 'Sex'])
 
 def main():
     st.sidebar.title("Navigation Menu")
-    navigation = st.sidebar.radio("Navigate", ["Home", "Data Info", "Case Outcome Visuals", "FAQ", "Train and Display Model"])
+    navigation = st.sidebar.radio("Navigate", ["Home", "Data Info", "Case Outcome Visuals", "FAQ", "Train and Display Model"], key="unique_navigation_menu")
 
     if navigation == "Home":
         home_page()
@@ -350,14 +335,19 @@ def main():
         plot_visualizations()
     elif navigation == "FAQ":
         display_faq()
-    if navigation == "Train and Display Model":
+    elif navigation == "Train and Display Model":
         st.write("### Immigration Outcome Prediction")
-        display_model_performance()
+        model, encoder = prepare_and_train_model(df_nat)
+        display_model_performance()  # Implement this function to display model performance metrics
         user_df = user_input_features()
         if st.button('Predict'):
-            prediction = model.predict(user_df)
-            st.write('### Predicted Outcome:', prediction[0])
+            prediction = predict_outcome(user_df['Nationality'][0], user_df['Sex'][0], encoder, model)
+            st.write(f"Probability of being Refused: {prediction[0][0]:.2f}")
+            st.write(f"Probability of Study Visa Issued: {prediction[0][1]:.2f}")
+            st.write(f"Probability of Asylum Case Success: {prediction[0][2]:.2f}")
 
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
